@@ -1,35 +1,35 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+    <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+    <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+    <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+        <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <title></title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="/css/style.css">
+            <link rel="stylesheet" href="/css/style.css">
 
-        <!--[if lt IE 9]>
-            <script src="/js/ie8.js"></script>
-        <![endif]-->
-    </head>
-    <body class="bg-gray-900 text-green-400 font-mono">
-        <style>
-  .mem {
-    display: inline-block;
-    min-width: 125px;
-  }
+            <!--[if lt IE 9]>
+                <script src="/js/ie8.js"></script>
+            <![endif]-->
+        </head>
+        <body class="bg-gray-900 text-green-400 font-mono">
+            <style>
+      .mem {
+        display: inline-block;
+        min-width: 125px;
+      }
 
-  .mem img {
-    height: 100px;
-    max-width: 300px;
-    object-fit: contain;
-  }
-</style>
+      .mem img {
+        height: 100px;
+        max-width: 300px;
+        object-fit: contain;
+      }
+    </style>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/exclaim.png" /><div>/!</div></div>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/100.png" /><div>/100</div></div>
 <div class="mem"><img data-src="http://i.4pcdn.org/pol/1530112017140.png" /><div>/10am</div></div>
@@ -365,6 +365,8 @@
 <div class="mem"><img data-src="https://i.kym-cdn.com/photos/images/newsfeed/001/513/771/2a7.jpg" /><div>/comfysneed</div></div>
 <div class="mem"><img data-src="http://lmao.love/memes/cschlafi.png" /><div>/comfyvirus</div></div>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/comfyxmas.png" /><div>/comfyxmas</div></div>
+<div class="mem"><img data-src="https://i.4pcdn.org/pol/1507439885026.jpg" /><div>/comped</div></div>
+<div class="mem"><img data-src="https://i.kym-cdn.com/photos/images/newsfeed/001/301/933/262.png" /><div>/comped2</div></div>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/confess.png" /><div>/confess</div></div>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/conga.gif" /><div>/conga</div></div>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/congo.gif" /><div>/congo</div></div>
@@ -849,6 +851,7 @@
 <div class="mem"><img data-src="https://i.4pcdn.org/pol/1560648937414.png" /><div>/femfeels2</div></div>
 <div class="mem"><img data-src="https://i.4pcdn.org/tv/1557470707448.jpg" /><div>/femfeels3</div></div>
 <div class="mem"><img data-src="https://image.ibb.co/mpF6PT/1532741426532.png" /><div>/fet</div></div>
+<div class="mem"><img data-src="https://i.imgur.com/A7CGR9u.png" /><div>/fgn</div></div>
 <div class="mem"><img data-src="https://xvsvc.net/emotes/fightme.png" /><div>/fightme</div></div>
 <div class="mem"><img data-src="http://lmao.love/memes/fi.png" /><div>/finn</div></div>
 <div class="mem"><img data-src="http://lmao.love/memes/4ree.gif" /><div>/fire</div></div>
@@ -2063,42 +2066,42 @@
 <div class="mem"><img data-src="https://xvsvc.net/emotes/zoomin.gif" /><div>/zoomin</div></div>
 <div class="mem"><img data-src="https://i.4pcdn.org/tv/1528956704526.gif" /><div>/zorak</div></div>
 <script>
-  // create config object: rootMargin and threshold
-// are two properties exposed by the interface
-const config = {
-  rootMargin: '0px 0px 50px 0px',
-  threshold: 0
-};
+      // create config object: rootMargin and threshold
+    // are two properties exposed by the interface
+    const config = {
+      rootMargin: '0px 0px 50px 0px',
+      threshold: 0
+    };
 
-// register the config object with an instance
-// of intersectionObserver
-let observer = new IntersectionObserver(function(entries, self) {
-  // iterate over each entry
-  entries.forEach(entry => {
-    // process just the images that are intersecting.
-    // isIntersecting is a property exposed by the interface
-    if(entry.isIntersecting) {
-      // custom function that copies the path to the img
-      // from data-src to src
-      preloadImage(entry.target);
-      // the image is now in place, stop watching
-      self.unobserve(entry.target);
+    // register the config object with an instance
+    // of intersectionObserver
+    let observer = new IntersectionObserver(function(entries, self) {
+      // iterate over each entry
+      entries.forEach(entry => {
+        // process just the images that are intersecting.
+        // isIntersecting is a property exposed by the interface
+        if(entry.isIntersecting) {
+          // custom function that copies the path to the img
+          // from data-src to src
+          preloadImage(entry.target);
+          // the image is now in place, stop watching
+          self.unobserve(entry.target);
+        }
+      });
+    }, config);
+
+    const imgs = document.querySelectorAll('[data-src]');
+    imgs.forEach(img => {
+      observer.observe(img);
+    });
+
+    function preloadImage(img) {
+      const src = img.getAttribute('data-src');
+      if (!src) { return; }
+      img.src = src;
     }
-  });
-}, config);
+    </script>
 
-const imgs = document.querySelectorAll('[data-src]');
-imgs.forEach(img => {
-  observer.observe(img);
-});
-
-function preloadImage(img) {
-  const src = img.getAttribute('data-src');
-  if (!src) { return; }
-  img.src = src;
-}
-</script>
-
-        <script src="/js/app.js"></script>
-    </body>
-</html>
+            <script src="/js/app.js"></script>
+        </body>
+    </html>
