@@ -29,9 +29,11 @@
   </span>
 </div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
 <script>
   var player = new Clappr.Player({
-    source: "https://tv.nknews.org/tvhls/stream.m3u8",
+    source: "https://tv.nknews.org/tvdash/stream.mpd",
+    plugins: [DashShakaPlayback],
     parentId: "#stream",
     width: '81%',
     height: '100%',
