@@ -34,9 +34,11 @@
   </span>
 </div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/gh/ewwink/clappr-quality-selector-plugin@latest/quality-selector.js"></script>
 <script>
   var player = new Clappr.Player({
     source: "https://freespeech.akamaized.net/hls/live/2016712/live1/playlist.m3u8",
+    plugins: [QualitySelector],
     parentId: "#stream",
     width: '81%',
     height: '100%',
