@@ -4,11 +4,17 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
+        <script>
+            if (location.protocol !== 'http:') {
+                location.replace('http:' + location.href.substring(location.protocol.length));
+            }
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Guatemala</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="/css/style.css">
@@ -31,20 +37,22 @@
     <ul class="text-left block w-5/6 m-auto">
       <li class="flex justify-between p-2">
         <div class="inline-block">
-            <img src="https:&#x2F;&#x2F;i.imgur.com&#x2F;xuRkTWU.png" class="h-8 w-8 inline-block bg-white">
-          <a href="/gt/0/">Antigua Sports</a>
+          <!--<img src="https:&#x2F;&#x2F;www.canalantigua.tv&#x2F;wp-content&#x2F;uploads&#x2F;2020&#x2F;02&#x2F;272-x90-logo.png" class="h-8 w-8 inline-block bg-white">-->
+            <span class="h-8 w-8 inline-block"></span>
+          <a href="/gt/0/">Canal Antigua</a>
         </div>
         <div id="button-box" class="inline-block">
-          <a href="http:&#x2F;&#x2F;143.208.59.12:1935&#x2F;AntiguaSports&#x2F;myStream&#x2F;chunklist.m3u8">Direct</a>
+          <a href="https:&#x2F;&#x2F;live.canalantigua.tv&#x2F;CanalAntigua&#x2F;myStream&#x2F;chunklist_w1288444071.m3u8">Direct</a>
         </div>
       </li>
       <li class="flex justify-between p-2">
         <div class="inline-block">
-            <img src="https:&#x2F;&#x2F;i.imgur.com&#x2F;H51bXhn.png" class="h-8 w-8 inline-block bg-white">
-          <a href="/gt/1/">Canal Antigua</a>
+          <!--<img src="http:&#x2F;&#x2F;www.iglesiadelcamino.org&#x2F;images&#x2F;logo.png" class="h-8 w-8 inline-block bg-white">-->
+            <span class="h-8 w-8 inline-block"></span>
+          <a href="/gt/1/">Iglesia Del Camino</a>
         </div>
         <div id="button-box" class="inline-block">
-          <a href="http:&#x2F;&#x2F;143.208.59.12:1935&#x2F;CanalAntigua&#x2F;myStream&#x2F;chunklist.m3u8">Direct</a>
+          <a href="http:&#x2F;&#x2F;streamingcontrol.com:1935&#x2F;ectv&#x2F;ectv&#x2F;chunklist_w615405992.m3u8">Direct</a>
         </div>
       </li>
     </ul>

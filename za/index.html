@@ -4,11 +4,17 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
+        <script>
+            if (location.protocol !== 'http:') {
+                location.replace('http:' + location.href.substring(location.protocol.length));
+            }
+        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>South Africa</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="referrer" content="no-referrer" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="/css/style.css">
@@ -31,12 +37,22 @@
     <ul class="text-left block w-5/6 m-auto">
       <li class="flex justify-between p-2">
         <div class="inline-block">
-          <!--<img src="https:&#x2F;&#x2F;i.imgur.com&#x2F;KviG5NU.png" class="h-8 w-8 inline-block bg-white">-->
+          <!--<img src="https:&#x2F;&#x2F;www.znbc.co.zm&#x2F;wp-content&#x2F;uploads&#x2F;2018&#x2F;10&#x2F;cropped-ZNBC-logo-192x192.png" class="h-8 w-8 inline-block bg-white">-->
             <span class="h-8 w-8 inline-block"></span>
-          <a href="/za/0/">Trace Africa</a>
+          <a href="/za/0/">TV1 (540p)</a>
         </div>
         <div id="button-box" class="inline-block">
-          <a href="http:&#x2F;&#x2F;d2ktlibtvvj8vp.cloudfront.net&#x2F;trace_africa&#x2F;6&#x2F;prog_index.m3u8">Direct</a>
+          <a href="https:&#x2F;&#x2F;dcunilive159-lh.akamaihd.net&#x2F;i&#x2F;dclive_1@1013574&#x2F;master.m3u8">Direct</a>
+        </div>
+      </li>
+      <li class="flex justify-between p-2">
+        <div class="inline-block">
+          <!--<img src="https:&#x2F;&#x2F;www.znbc.co.zm&#x2F;wp-content&#x2F;uploads&#x2F;2018&#x2F;10&#x2F;cropped-ZNBC-logo-192x192.png" class="h-8 w-8 inline-block bg-white">-->
+            <span class="h-8 w-8 inline-block"></span>
+          <a href="/za/1/">TV4 (720p)</a>
+        </div>
+        <div id="button-box" class="inline-block">
+          <a href="https:&#x2F;&#x2F;dcunilive258-lh.akamaihd.net&#x2F;i&#x2F;dclive_1@348579&#x2F;master.m3u8">Direct</a>
         </div>
       </li>
     </ul>
