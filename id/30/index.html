@@ -11,7 +11,7 @@
         </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>One TV</title>
+        <title>Trans TV (720p)</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="referrer" content="no-referrer" />
@@ -36,12 +36,10 @@
   </span>
 </div>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/clappr/dash-shaka-playback@latest/dist/dash-shaka-playback.js"></script>
 <script>
   var player = new Clappr.Player({
-    source: "https://liveanevia.mncnow.id/live/eds/SetOne/sa_dash_vmx/SetOne.mpd",
+    source: "https://video.detik.com/transtv/smil:transtv.smil/playlist.m3u8",
     parentId: "#stream",
-    plugins: [DashShakaPlayback],
     width: '81%',
     height: '100%',
     poster: '/cluster-of-stars.jpg',
